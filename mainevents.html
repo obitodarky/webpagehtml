@@ -1,0 +1,286 @@
+
+<html>
+<head>
+<title> Events </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.menu .icon {
+    display: none;
+}
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;
+	background-color:#eaeaea ;
+}
+.mySlides {display:none}
+
+
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 40%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 30%;
+}
+
+.jtext {
+ font-size: 60px;
+font-family: "Century Gothic";
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  font-family: "Century Gothic";
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+	
+<body>
+	<div class="menu" id="menu">
+
+		
+		<a href="eventsfor.html">Events Forever</a>
+		<a href="eventsup.html">Upcoming Events</a>
+
+
+	</div>
+
+ <div class="jtext">EVENTS</div>
+
+<a href="eventsup.html">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">REUNION</div>
+  <img src="Images/1.jpg" style="width:100%">
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">TREKKING</div>
+  <img src="Images/2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">ENTREPRENEURSHIP</div>
+  <img src="Images/3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">CLUB MEETINGS</div>
+  <img src="Images/7.jpg" style="width:100%">
+</div>
+</div>
+</a>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<a href="eventsfor.html">
+<center>
+<img src="Images/5.jpg" height="50%" width="40%" STYLE="border:15px  #FFFFFF solid;">
+
+<img src="Images/6.jpg" height="50%" width="40%" STYLE="border:15px  #FFFFFF solid;">
+
+<img src="Images/7.jpg" height="50%" width="40%" STYLE="border:15px  #FFFFFF solid;">
+
+<img src="Images/8.jpg" height="50%" width="40%" STYLE="border:15px  #FFFFFF solid;">
+
+</center>
+</a>
+
+<center>
+<button class="button" style="vertical-align: middle"><span>Login </span></button>
+
+<button class="button" style="vertical-align: middle"><span>Register </span></button>
+</center>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++)
+ {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html> 

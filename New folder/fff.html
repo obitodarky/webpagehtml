@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button.accordion {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+body {
+	background-color: #eaeaea;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+body {
+	padding:  60;
+	font-family: Century Gothic;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #000;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #dedddd;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.col-25 {
+	padding-top: 50px;
+	padding-bottom: 10px;
+	font-size: 30px;
+}
+h1{
+	font-size: 70px;
+}
+</style>
+</head>
+<body>
+<h1>FAQ.</h1>
+<hr width="30%" color="black" align="left"><br>
+<button class="accordion">HOW DO I OBTAIN AN OFFICIAL TRANSCRIPT ?</button>
+<div class="panel"><p>For your official you need to contact the Navrachana's registar's directly</p>
+ </div>
+
+<button class="accordion">HOW DO I REPLACE MY DIPLOMA ?</button>
+<div class="panel"><p>In the event your diploma is lost or damaged, the University will supply, upon proper deposition and the payment of a fee to cover the cost, a replacement diploma. Before issuing the replacement we require the return of the damaged diploma, or such portions of it as are available; or, in the case of loss or complete destruction, the submission of an affidavit, which must be notarized. A check or money order in the amount of INR 500.00  payable to Navrachana University should accompany your order. Address :- Vasna Bhayli Road, Vadodara, Gujarat 391410.</p></div>
+
+<button class="accordion">CAN I GET/KEEP MY  E-MAIL ADDRESS?</button>
+<div class="panel"><p>NUV will forward all messages received through an E-mail address free of charge to your own active e-mail account.                                                  <br>        OR        <br>
+       you will be provided with update on this site itself once you have registered here</p>
+  </div>
+
+<button class="accordion">WHAT KINDS OF ALUMNI BENEFITS ARE THERE?</button>
+<div class="panel"><p>Here Alumni will be updated with new events that are upcoming in the college and the Alumni will get to interact with the current students .
+<br>
+1.They can know what is going on in college .
+Example:- events,Alumni Quiz,Alumni Meet,etc
+2.They can access library to read books 
+And Many more benefits </p>
+ </div>
+
+<button class="accordion">WHAT IS THE PURPOSE OF THIS ALUMNI SITE?</button>
+<div class="panel"><p>Here Alumni will be updated with new events that are upcoming in the college and the Alumni will get to interact with the current students Here Alumni will interconnect with current students who want's to interconnect with the Alumni or have some doubts that they want to discuss or want to know Alumni review about a particular thing or are still confused about what to do after college so they can ask you whatever they have problem in for suggestions .</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+<form action="faq.html">
+<div class="row">
+      <div class="col-25">
+        <label for="Your Queries">Your Queries.</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Your Queries" name="Your Queries" placeholder="Your Queries..." rows="5" cols="100" ></textarea>
+      </div>
+    </div>
+ <button class="button2" style="vertical-align: middle"><span>Submit </span></button>
+  </form>
+
+</body>
+</html>

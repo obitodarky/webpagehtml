@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+
+    background-color : #eaeaea;
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("Home Page/pixel.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav.bar.black {
+    position :  fixed;
+    padding-left: 25%;
+    padding-right: 25%;
+    width : 100%;
+}
+
+.footer-distributed{
+  background-color: black;
+  box-shadow: 0 1px 1px 0 rgba(255,255,255,0);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px Century Gothic;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+
+
+
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed {
+  margin-top: 25px;
+}
+
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px Century Gothic;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+
+.button{color:#000;background-color:#f1f1f1;padding:8px 16px}
+
+.button:hover{color:#000!important;background-color:#ccc!important}
+
+
+.button{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+
+.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+
+.justify{
+	text-align : justify;
+	text-justify : inter-word;
+	}
+
+.wide{font-family:"Century Gothic",Arial,sans-serif}
+
+.padding-14{padding: 14px 16px;font-size: 17px}
+
+.padding-16{  padding-bottom: 50px; padding: 30px 36px;font-size: 20px}
+
+.center{text-align:center!important}
+
+.container{padding:0.01em 16px}
+
+.content{max-width:980px;margin:auto}
+
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+
+.xlarge{font-size:24px!important}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook-official:before{content:"\f230"}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-facebook-f:before,.fa-facebook:before{content:"\f09a"}
+
+.fa-whatsapp:before{content:"\f232"}
+
+.fa-flickr:before{content:"\f16e"}
+
+.fa-linkedin-square:before{content:"\f08c"}
+
+.-square:before{content:"\f082"}
+
+.fa-linkedin:before{content:"\f0e1"}
+
+.fa-twitter:before{content:"\f099"}
+
+.fa-twitter-square:before{content:"\f081"}
+
+.fa-pinterest-p:before{content:"\f231"}
+
+.left-align{text-align:left!important}
+
+ul{
+	opacity: 100%;
+	display: flex;
+	text-align: center;
+	position: absolute;
+	top: 237%;
+	left: 50%
+	transform:translate(-50%,-50%);
+}
+
+ul li{
+	
+	background: #000000;
+	margin:10px;
+	list-style: none;
+	font-style: 10px;
+	transition: .5s;
+}
+
+
+
+</style>
+</head>
+<body style="margin:0;padding:0">
+
+<!-- Navigation -->
+<nav class="bar black">
+  <a href="home2.html" class="button bar-item padding-14 wide">Home</a>
+  <a href="alumni.html" class="button bar-item padding-14 wide">Alumnus</a>
+  <a href="clubs.html" class="button bar-item padding-14 wide">Club</a>
+  <a href="vol.html" class="button bar-item padding-14 wide">Volunteer</a>
+  <a href="mainevents.html" class="button bar-item padding-14 wide">Events</a>
+  <a href="aboutus.html" class="button bar-item padding-14 wide">About Us</a>
+  <a href="faq.html" class="button bar-item padding-14 wide">FAQ</a>
+ 
+</nav>
+<div class="bg"></div>
+<section class=" container center content" style="max-width:600px">
+  <h2 class="wide"><br> Welcome To Our Website</h2>
+  <hr size="2" color="black" width="75%">
+  <p class="justify left-align">
+</section>
+
+<div class="row">
+  <div class="column justify center" style="background-color: #eaeaea;">
+    <p class="left-align wide  padding-16"><br><br> As someone who walked our hallowed halls, and holds one<br> <br>of the most coveted diplomas in the nation, you are part of <br><br> the largest living alumni body of any university anywhere; <br><br>covering every profession, in every corner of the world.<br><br> Making it a better place. As your Alumni Association, we <br><br> know the Maize and Blue that runs through your veins. Here <br> <br>you’ll find everything there is to connect you back to <br><br>that place you once called home. To the people who are <br><br>forever known as the Leaders and Best. And to everything <br><br>we offer to help you be your most successful. So welcome.<br><br> Explore. Get involved. And, of course, Go Black!<br><br> <br> <br> <br>  
+	</p></p>
+  </div>
+  <div class="column justify center" style="background-color: #eaeaea;">
+    <h2 class="wide"></h2>
+    <div>
+
+    	<br><br><br> <br><br><br> <br><br><br><img src="Home Page/unnamed.jpg" height=277px width="100%">
+
+    </div>
+  </div>
+</div>
+
+    <footer class="footer-distributed">
+
+
+      </div>
+
+      <div class="footer-left">
+      <div>
+      	<p><span><font color="white">About us</font></span></p>
+      </div>
+      		
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+
+          <p><span>Stay Connected</span></p>
+          <ul>
+
+        		<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        		<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        	</ul>
+        </div>
+        	
+      </div>  
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>FAQ.</span>
+          	Solve your queries here.
+        </p>
+
+      </div>
+
+    </footer>
+
+</body>
+</html>

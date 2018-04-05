@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+body {
+  background-color: #eaeaea;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:  rgba(0, 0, 0, 0.56);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.jtext {
+font-size: 20px;
+  font-family: "Century Gothic";
+  padding: 60px;
+
+}
+.ptext{
+font-family: "Century Gothic";
+font-size: 60px;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+  font-family: "Century Gothic";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="ptext">EVENTS FOREVER</div>
+<br><hr width="60%" color="black" align="left"><br>
+<center>
+<div class="container">
+  <img src="5 (2).jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Athletics</div>
+</div>
+  </div>
+</center><br>
+<div class="jtext">Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and walking. Organized athletics are traced back to the Ancient Olympic Games from 776 BC. The rules and format of the modern events in athletics were defined in Western Europe and North America in the 19th and early 20th century. Athletics has been contested at every Summer Olympics since the birth of the modern Olympic movement at the 1896 Summer Olympics.
+<br>To make our life sporty like athletics. Every year we plan for this event.
+</div>
+<hr width="300px" color="grey"><br><br>
+
+
+<center>
+<div class="container">
+  <img src="6 (1).jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Garden Party</div>
+</div>
+  </div>
+</center><br>
+<div class="jtext">In today’s fast life we all are tired from our routine life. To change it we plan a Great Garden Party every month. So we can relax with nature. Just think about that feeling when hold a glass of cocktail and wind is playing with your hair. 
+<br>Welcome to word of nature.
+</div>
+<hr width="300px" color="grey"><br><br>
+
+
+<center>
+<div class="container">
+  <img src="7.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Award Ceremony</div>
+</div>
+  </div>
+</center><br>
+<div class="jtext">Somebody in your initiative has been doing an excellent job and has just achieved a professional victory. Everybody knows about it, and you have all congratulated your colleague for the good work. It's time to hold an awards ceremony. Presenting awards at a special ceremony is a good way to honor staff members and volunteers who have shown outstanding commitment and accomplished big things.
+<br>We respect the talent .
+</div>
+<hr width="300px" color="grey"><br><br>
+
+
+<center>
+<div class="container">
+  <img src="8 (4).jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Seminar</div>
+</div>
+  </div>
+</center><br>
+<div class="jtext">A seminar is a group meeting led by an expert that focuses on a specific topic or discipline, such as business, job searches or a university field such as literature. Seminars typically take place over the course of a few days and involve cooperative discussion, multiple speakers and opportunities to share perspectives and issues related to the topic. Attending a seminar has numerous benefits, including improving communication skills, gaining expert knowledge, networking with others and renewing motivation and confidence.
+<br>We share knowledge.
+</div>
+<br>
+
+<center>
+<button class="button" style="vertical-align: middle"><span>Login </span></button>
+
+<button class="button" style="vertical-align: middle"><span>Register </span></button>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 60%;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: #eaeaea;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 25%;
+}
+
+.ptext {
+font-size: 60px;
+  font-family: "Century Gothic";
+}
+
+.jtext {
+font-size: 20px;
+  font-family: "Century Gothic";
+  padding: 60px;
+
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 35px;
+  font-family: "Century Gothic";
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="ptext">UPCOMING EVENTS</div>
+<br>
+<hr width="60%" color="black" align="left">
+<br><br>
+<center>
+<div class="container">
+  <img src="Images/1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Reunion Now</div>
+  </div>
+</div>
+</center><br>
+<div class="jtext">The enjoyment of reuniting with friends who now live all over the globe, and the chance to relive some of the messy fun of college. Reunions can help people construct a sense of meaning in their lives. “College is usually the first time we approached others of an equal status and we decided who to spend time with and what to do.
+</div>
+<hr width="300px" color="grey"><br><br>
+
+<center>
+<div class="container">
+  <img src="Images/2.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Trekking</div>
+  </div>
+</div>
+</center><br>
+<div class="jtext">There are all kinds of exercises that one adheres to for fitness. For me hiking or trekking is one way to remain physically and mentally fit. For most of the level-headed outsider who is  unexposed to the outdoors or wilderness – trekking is normally associated as arduous task trudging on some hard and uneven ground, climbing and walking on moraines amidst hostile environment with bare shelter, food and clothing essentials.
+</div>
+
+<hr width="300px" color="grey"><br><br>
+
+<center>
+<div class="container">
+  <img src="Images/3.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Entrepreneurship</div>
+  </div>
+</div>
+</center><br>
+<div class="jtext"> Entrepreneurs are frequently thought of as national assets to be cultivated, motivated and remunerated to the greatest possible extent.Entrepreneurs can change the way we live and work. If successful, their innovations may improve our standard of living. In short, in addition to creating wealth from their entrepreneurial ventures, they also create jobs and the conditions for a prosperous society.
+</div>
+
+<hr width="300px" color="grey"><br><br>
+
+<center>
+<div class="container">
+  <img src="Images/7.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Club Meetings</div>
+  </div>
+</div>
+</center>
+<div class="jtext">Lengthy/boring meetings are the number one reason former members cite for dropping out of their  clubs. Meetings are a significant part of the club experience and have a big impact on how the association is perceived by members. Meetings are also important to the efficient functioning of your club. Holding effective meetings will help you accomplish things.
+</div>
+<br>
+<center>
+<button class="button" style="vertical-align: middle"><span>Login </span></button>
+
+<button class="button" style="vertical-align: middle"><span>Register </span></button>
+</center>
+</body>
+</html>

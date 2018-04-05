@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("Home Page/pixel.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav.bar.black {
+    padding-left: 27%;
+    padding-right: 25%;
+}
+
+.footer-distributed{
+  background-color: black;
+  box-shadow: 0 1px 1px 0 rgba(255,255,255,0);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px Century Gothic;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+
+
+
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed {
+  margin-top: 25px;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px Century Gothic;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+
+.button{color:#000;background-color:#f1f1f1;padding:8px 16px}
+
+.button:hover{color:#000!important;background-color:#ccc!important}
+
+
+.button{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+
+.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+
+.justify{text-align:justify!important}
+
+.wide{font-family:"Century Gothic",Arial,sans-serif}
+
+.padding-14{padding: 14px 16px;font-size: 17px}
+
+.padding-16{padding: 30px 36px;font-size: 17px}
+
+.center{text-align:center!important}
+
+.container{padding:0.01em 16px}
+
+.content{max-width:980px;margin:auto}
+
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+
+.xlarge{font-size:24px!important}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook-official:before{content:"\f230"}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-facebook-f:before,.fa-facebook:before{content:"\f09a"}
+
+.fa-whatsapp:before{content:"\f232"}
+
+.fa-flickr:before{content:"\f16e"}
+
+.fa-linkedin-square:before{content:"\f08c"}
+
+.-square:before{content:"\f082"}
+
+.fa-linkedin:before{content:"\f0e1"}
+
+.fa-twitter:before{content:"\f099"}
+
+.fa-twitter-square:before{content:"\f081"}
+
+.fa-pinterest-p:before{content:"\f231"}
+
+.left-align{text-align:left!important}
+
+</style>
+</head>
+<body style="margin:0;padding:0">
+
+<!-- Navigation -->
+<nav class="bar black">
+  <a href="#home" class="button bar-item padding-14 wide">Home</a>
+  <a href="#almumnus" class="button bar-item padding-14 wide">Alumnus</a>
+  <a href="#club" class="button bar-item padding-14 wide">Club</a>
+  <a href="#volunteer" class="button bar-item padding-14 wide">Volunteer</a>
+  <a href="#events" class="button bar-item padding-14 wide">Events</a>
+  <a href="#aboutus" class="button bar-item padding-14 wide">About Us</a>
+  <a href="#faq" class="button bar-item padding-14 wide">FAQ</a>
+</nav>
+<div class="bg"></div>
+<section class=" container center content" style="max-width:600px">
+  <h2 class="wide">Welcome To Our Website</h2>
+  <p class="justify left-align">
+</section>
+
+<div class="row">
+  <div class="column justify center" style="background-color:white;">
+    <p class="left-align wide padding-16"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></p>
+  </div>
+  <div class="column justify center" style="background-color: white;">
+    <h2 class="wide"></h2>
+    <div>
+    	<img src="Home Page/unnamed.png" height=277px width="404px">
+    </div>
+  </div>
+</div>
+
+    <footer class="footer-distributed">
+
+
+      </div>
+
+      <div class="footer-left">
+      <div>
+      	<p><span><font color="white">About us</font></span></p>
+      </div>
+      		
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+
+          <p><span>Stay Connected</span></p>
+        </div>
+
+        <div>
+
+          <p>Phone number</p>
+        </div>
+        <div>
+        	<p>123456789</p>
+        </div>		
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>FAQ.</span>
+          	Solve your queries here.
+        </p>
+
+      </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<br>
+
+
+<br> 
+<br>
+<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+.panel{
+  width: 90%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mtext {
+ font-size: 60px;
+  font-family: Century Gothic;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family: Century Gothic;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-family: Century Gothic;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+h1, h2, h3, h4, h5, h6, b 
+{
+  font-family: Century Gothic;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="mtext">CLUBS</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpeg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="2.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="3.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="4.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="5.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<style>
+button.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 28px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+div.panel {
+    padding: 0 20px;
+    background-color: #F0F8FF ;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<center> <button class="accordion"> <B> <h3> (1) <U> What are Clubs ? </U> : </h3> <BR> <BR>
+
+        A brief note on what Clubs in Alumni Association mean and how they function.... </B>
+</button> 
+<div class="panel">
+  <p> <font size="5px">
+        The clubs in Alumni Association are body which comprise of ex-students of the University who help in functioning and organisation of events, competitions, events, meets, tours, festivals etc. </font> </p>
+</div></center>
+<br>
+<br>
+
+<center><button class="accordion"> <B><h3>(1) <U> Music </U> : </h3><BR> <BR>
+
+      The Music Club of the Alumni Association deals with participation and engagement of allumnis in the musical events, competitions and festivals organised in the university. </B>
+</button>
+
+<div class="panel">
+  <p> <font size="5px">
+      The Music Club of the Alumni Association deals with participation and engagement of allumnis in the musical events, competitions and festivals organised in the university. 
+
+       Alumnis who are interested in singing or playing any instrument can perform at eventsand can even train the current batches for the events. The alumni association's music club organises it's own music festival every year in the university campus where both past and present students perform, compete and collaborate. We even help the talented students and members by promoting their talent on bigger stages and raising funds for further training.             
+      Any alumni member can join the club by filling the form and paying a nominal fee of Rs. 1000/month ( which goes to the funds we are collecting to help talented students). The form can be collected from the university's Music and Arts office or you can collect it from the HoD of Arts department.
+      
+     We at the Music Club of Allumni Association invite you to be a part of the team and help make the university a soulful place with the help of music and support each other in achieveing our dreams. </font> </p>
+</div></center>
+<BR> <BR>
+
+<center><button class="accordion"> <B><h3>(2) <U> Development </U> :</h3> <BR> <BR>
+
+        The Development Club of alumni Association is a body which comprises the former students of the University with the responsibility of helping with the computer and technological area. </B> </button> 
+<div class="panel">
+  <p><font size="5px">
+        The Development Club of alumni Association is a body which comprises the former students of the University with the responsibility or duty of helping the current batches in making, developing, organising and maintaining the online portals (such as websites and apps ) of their clubs, batches, programmes . 
+
+        We also help the university by constantly discussing with the IT wing about how to improve the websites of university and it's different sub-divisions. It is the responsibility of the Development Club to maintain the website of alumni association. 
+
+       We also organise seminars, workshops, guest lectures, events, competitions to help the current students deal with the pressure of keeping up with the fast moving IT sector in a very light and fun oriented manner. We also help them in preparations for competitions.
+      
+       So the Development club of Allumni Association invites you to join us and be a part of the effort we are making to nurture the upcoming talents in the field of technology.
+
+
+       Interested members can pick the forms from the office of Computer Application Department of the University. A very reasonable fee of Rs. 1500/month is to be paid that will help us organise the events. </font></p>
+</div></center>
+<BR> <BR>
+
+<center><button class="accordion"> <B> <h3>(3) <U> Organisation </U> :</h3> <BR> <BR>
+        
+          The Organisation Club of alumni Association is a body which helps the university and students in organising different events inside and outside the campus. </B></button>
+<div class="panel">
+  <p><font size="5px">
+          The Organisation Club of alumni Association is a body which helps the university and students in organising different events inside and outside the campus. 
+
+          Our responsibility is to be involved and give our effort in successful organisation of evnts such as competitions,seminars,workshops,festivals,guest lectures,company visit,industrial and cultural tours, sports events etc. We not only help but also take part in these events by contributing financially and professionally. 
+
+          To join the club all you have to do is pick up a form from the Cultural Department of the university and pay a fee of Rs. 1000/month. You can also collect the from from registrar's office.
+
+         We hope that you'll join us enthusiastically and be a part of the family. While working with the young students we not only teach them, even we get to learn some life lessons and live some great moments. We get a chance to live your student life again.  
+</font> </p>
+</div></center>
+
+<BR> <BR>
+
+<center><button class="accordion"><B> <h3>(4) <U> SPORTS </U> :</h3> <br> <br>
+The Sports Club of the Alumni association helps in organising sports meets and events either internally or externally for the University </B></button>
+<div class="panel">
+  <p><font size="5px">The Sports club of Alumni Association is a body that is responsible for helping out and assisting the University in field of Sports.The main job of this club is to organise sports events, sports camps, to volunteer during the Inter-State/City/University Sports Meets.
+
+           Another important responsibilty of the club members is to help the University in selection processes of different disciplines and to help in the training. The members will help organise and promote the sporting events in the University.There will be separate sport events for the members of the Sports Club.
+
+          We also run a funding scheme where donations are done to help in the higher level training of students who are talented but cant support themselves.
+
+         We work very hard to promote a sporty environment among the students and we believe that with such a surrounding our students can achieve a lot. </font></p>
+</div></center>
+
+<BR> <BR> 
+
+<center><button class="accordion"><B> <h3>(5) <U> THEATRES </U> :</h3> <br> <br>
+The Theatre Club of the Alumni Association is a body that helps with the organisation of dramas, skits and stage performances in University ( externally as well as internally).
+ </B></button>
+<div class="panel">
+  <p><font size="5px">
+
+</font></p>
+</div></center>
+
+<br> <br> <br>
+<HR><hr>
+<br><br><br><br><br><br><br>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
